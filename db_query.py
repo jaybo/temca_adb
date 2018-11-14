@@ -12,6 +12,6 @@ db = client.Z100
 data = {}
 # db.tar.create_index([('metadata.grid', pymongo.ASCENDING)])
 # data = db.tar.find_one({'tile_qc.failed' : False}, {'_id': 1})
-data = db.tar.find_one({'metadata.grid' : {'$eq': '5000'}})
+data = db.tar.find_one({'metadata.grid' : {'$eq': '50'}})
 #data = db.tar.find({'metadata.grid' : '5000'}).explain("executionStats")
 print (data)
